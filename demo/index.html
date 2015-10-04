@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Just a quick sketch :) -->
+    <title>G3 Blog</title>
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="blue.css" id="switch" />
+
+</head>
+<body>
+    <div class="background"></div>
+    <div class="social">
+        <div class="slink"><a href="https://twitter.com/G3Archives">
+            <img src="01_twitter.png" height="40px" />
+            <span>Follow us on Twitter!</span>&nbsp;</a>
+        </div>
+        <div class="slink"><a href="https://www.facebook.com/G3Archives-719422878189236/timeline/">
+            <img src="02_facebook.png" height="40px" />
+            <span>Like us on Facebook!</span>&nbsp;</a>
+        </div>
+        <div class="slink"><a href="https://plus.google.com/u/6/112513331319996362925/posts">
+            <img src="google.png" height="40" />
+            <span>Like us on Google+!</span>&nbsp;</a>
+        </div>
+    </div>
+    <div class="parentcontent">
+        <div class="header" id="top">
+            <span class="title">G3 <span class="sdp">Creative</span> Blog</span>
+            <div class="menu">
+                <input type="checkbox" id="archives" class="tabtoggle" />
+                <label for="archives" class="textog">ARCHIVES</label>
+
+                <div class="tabcontent">
+                    <div class="padme">
+                    <input type="checkbox" id="dec2015" class="droptog" />
+                    <label for="dec2015" class="toggle">December 2015</label>
+
+                    <div class="dropcontent">
+                        <ul>
+                            <li><a href="#jpost1">Sample Post 1.</a></li>
+                            <li><a href="#jpost2">Sample Post 2.</a></li>
+                        </ul>
+                    </div>
+                    <br />
+                    <br />
+                    <input type="checkbox" id="jan2016" class="droptog" />
+                    <label for="jan2016" class="toggle">January 2016</label>
+
+                    <div class="dropcontent">
+                        <ul>
+                            <li><a href="#jpost3">Sample Post 3.</a></li>
+                            <li><a href="#jpost4">Sample Post 4.</a></li>
+                        </ul>
+                    </div></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <span class="displaytoggle">
+                <label for="buttons">Menu</label></span>
+            <input type="checkbox" class="buttonstog" id="buttons" /><div>
+                <span><a href="blog.html">Home</a></span><span><a href="about.html">About Us</a></span><span><a href="http://www.onlineg3.com/OnlineG3/Home.html">G3 Website</a></span><span><a href="submissions.html">Submit Your Work</a></span>
+            </div>
+        </div>
+        
+            <div class="contentbox">
+                <div class="slidecontainer"><span class="slide s1">Our Favorite: <a href="jpost4">Sample Post 4</a></span><span class="slide s2">Featured: <a href="jpost3">Sample Post 3</a></span></div>
+
+            </div>
+
+       
+        <input type="checkbox" class="contentcheck" id="post1" />
+        <div class="contentbox" id="jpost1">
+            <div class="boxhead">
+                <label for="post1">Yay! First Post! <span class="closed">(Click to read more.)</span> <span class="open">(Click to collapse.)</span></label><div class="attribute">by Kernal Sanders [Site Admin]</div>
+            </div>
+            
+            <p>
+                We've been <a href="http://8ch.net/tech/src/1440807765952.webm" style="color:purple">hard at work</a> preparing our website for launch, So without further ado, I present my limerick that I spent like three minutes making:
+<p>There once was a man on a drive
+<p>Because he had ran out of CAT-5
+<p>He went to the store
+<p>And bought some more
+<p>And now our website is live
+            </p>
+        </div>
+        <input type="checkbox" id="themec" class="themec"/><div class="themechoose"><label for="themec">Select Theme ▾</label><br />
+<div class="selections">
+    <input type="button" id="switch2" value="Simple Theme" class="but"/><br />
+    <input type="button" id="switch3" value="Winter Theme" class="but"/><br />
+    <input type="button" id="switch1" value="Halloween Theme" class="but"/></div></div>
+        <p class="padme">Copyright 2015 OnlineG3. Website functionality provided by students.</p><br />
+
+        <div class="backtotop"><a href="#top">
+            <img src="backtotop.png" width="40"/></a>
+
+
+            
+        </div> 
+    </div>
+    <script>
+        document.getElementById('switch1').onclick = function () {
+            document.getElementById('switch').href = 'pink.css';
+        };
+        document.getElementById('switch2').onclick = function () {
+            document.getElementById('switch').href = 'blue.css';
+        };
+        document.getElementById('switch3').onclick = function () {
+            document.getElementById('switch').href = 'winter.css';
+        };
+    </script>
+</body>
+</html>
+
