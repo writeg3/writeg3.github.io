@@ -5,14 +5,8 @@
     <title>G3 Blog</title>
     <link href="./styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("post.txt"); 
-    });
-    </script> 
 </head>
-<body >
+<body>
     <div class="background"></div>
     <div class="social">
         <div class="slink"><a href="https://twitter.com/G3Archives">
@@ -31,7 +25,19 @@
     <div class="parentcontent">
         <div class="header" id="top">
             <span class="title">G3 <span class="sdp">Creative</span> Blog</span>
-           
+            <div class="menu">
+                <input type="checkbox" id="archives" class="tabtoggle">
+                <label for="archives" class="textog">SORT BY</label>
+
+                <div class="tabcontent">
+                    <input type="checkbox" id="dec2015" class="droptog">
+                    <label for="dec2015" class="toggle">popularity</label>
+					<br>
+					
+                    <input type="checkbox" id="jan2016" class="droptog">
+                    <label for="jan2016" class="toggle">date</label>
+                </div>
+            </div>
         </div>
 
         <div class="buttons">
@@ -41,10 +47,7 @@
                 <span><a href="./index.html">Home</a></span><span><a href="./about.html">About</a></span><span><a href="./submissions.html">Submit Your Work</a></span>
             </div>
         </div>
-        <object type="text/html" data="posts/post1.html" width="950px" height="240px" style="overflow:hidden;"></object>
-		<object type="text/html" data="posts/post2.html" width="950px" height="240px" style="overflow:hidden;"></object>
-		<object type="text/html" data="posts/post3.html" width="950px" height="240px" style="overflow:hidden;"></object>
-		<object type="text/html" data="posts/post4.html" width="950px" height="240px" style="overflow:hidden;"></object>
-   </div>
-<br>   
+		
+    </div>
+<br>		        
 </body></html>
